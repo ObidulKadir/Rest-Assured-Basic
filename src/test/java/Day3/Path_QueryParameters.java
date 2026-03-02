@@ -13,6 +13,28 @@ public class Path_QueryParameters {
 	
 		//https://jsonplaceholder.typicode.com/posts?userId=1
 	
+	/*
+	 * Path param দিয়ে:
+
+			1. Specific resource fetch
+
+            2. Update specific resource
+
+            3. Delete specific resource
+
+Query param দিয়ে:
+
+           1. Filtering
+
+           2. Sorting
+
+           3. Pagination
+
+           4. Searching
+
+           5. Limiting fields
+	 */
+	
 	@Test
 	void testQueryAndPathParameters() {
 		
