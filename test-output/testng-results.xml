@@ -1,84 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-03T00:30:09 BDT" name="Default suite" finished-at="2026-03-03T00:30:18 BDT" duration-ms="8476">
+  <suite started-at="2026-03-03T10:59:20 BDT" name="Default suite" finished-at="2026-03-03T10:59:27 BDT" duration-ms="6873">
     <groups>
     </groups>
-    <test started-at="2026-03-03T00:30:09 BDT" name="Default test" finished-at="2026-03-03T00:30:18 BDT" duration-ms="8476">
-      <class name="Day3.CookiesAndHeaders">
-        <test-method signature="sendAndValidateHeaders()[pri:0, instance:Day3.CookiesAndHeaders@60099951]" started-at="2026-03-03T00:30:09 BDT" name="sendAndValidateHeaders" finished-at="2026-03-03T00:30:13 BDT" duration-ms="3318" status="PASS">
+    <test started-at="2026-03-03T10:59:20 BDT" name="Default test" finished-at="2026-03-03T10:59:27 BDT" duration-ms="6873">
+      <class name="Day3.cookies">
+        <test-method signature="sessionFlow()[pri:1, instance:Day3.cookies@60099951]" started-at="2026-03-03T10:59:20 BDT" name="sessionFlow" finished-at="2026-03-03T10:59:23 BDT" duration-ms="3412" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sendAndValidateHeaders -->
-        <test-method signature="extractResponseHeaders()[pri:1, instance:Day3.CookiesAndHeaders@60099951]" started-at="2026-03-03T00:30:13 BDT" name="extractResponseHeaders" finished-at="2026-03-03T00:30:13 BDT" duration-ms="108" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extractResponseHeaders -->
-        <test-method signature="setAndVerifyCookies()[pri:2, instance:Day3.CookiesAndHeaders@60099951]" started-at="2026-03-03T00:30:13 BDT" name="setAndVerifyCookies" finished-at="2026-03-03T00:30:15 BDT" duration-ms="1976" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setAndVerifyCookies -->
-        <test-method signature="cookieSessionFlow()[pri:3, instance:Day3.CookiesAndHeaders@60099951]" started-at="2026-03-03T00:30:15 BDT" name="cookieSessionFlow" finished-at="2026-03-03T00:30:18 BDT" duration-ms="2952" status="PASS">
+        </test-method> <!-- sessionFlow -->
+        <test-method signature="cookieSessionFlow()[pri:2, instance:Day3.cookies@60099951]" started-at="2026-03-03T10:59:23 BDT" name="cookieSessionFlow" finished-at="2026-03-03T10:59:27 BDT" duration-ms="3409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cookieSessionFlow -->
-        <test-method signature="tokenExtractAndSendNextCall()[pri:4, instance:Day3.CookiesAndHeaders@60099951]" started-at="2026-03-03T00:30:18 BDT" name="tokenExtractAndSendNextCall" finished-at="2026-03-03T00:30:18 BDT" duration-ms="79" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Expected status code <200> but was <403>.
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <403>.
-
-at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
-at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:714)
-at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:139)
-at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:147)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at Day3.CookiesAndHeaders.tokenExtractAndSendNextCall(CookiesAndHeaders.java:112)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tokenExtractAndSendNextCall -->
-      </class> <!-- Day3.CookiesAndHeaders -->
+      </class> <!-- Day3.cookies -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
