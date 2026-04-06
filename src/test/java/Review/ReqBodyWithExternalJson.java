@@ -16,7 +16,7 @@ import static org.hamcrest.Matchers.is;
 
 public class ReqBodyWithExternalJson {
 	
-	/*
+	/* 4 ways the request body can be create
 	 * 1. Post Request Body with Hashmap
 	 * 2. Post Request Body with org.json
 	 * 3. Post Request body creationg using POJO class
@@ -76,6 +76,14 @@ public class ReqBodyWithExternalJson {
 			.log().all();
 	}
 	
+	
+	/*
+	 *  then() -- Validate the response such as headers, cookies, time, content,logging, status code.
+	 *   then().body() - Use it to validate the content  such as name, id, etc.
+	 *   
+	 *   Headers --- are metadata about the response. They describe how to handle the response.
+	 *   Cookies-- Small data stored by browser/server. and used for login session, tracking , authentication.
+	 */
 	
 
 }
