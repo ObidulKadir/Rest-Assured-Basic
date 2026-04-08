@@ -130,8 +130,6 @@ public class CookiesAndHeaders {
 		.then()
 			.statusCode(200)
 			.log().all();
-	 
-	    
 	}
 	
 
