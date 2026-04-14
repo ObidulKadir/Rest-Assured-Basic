@@ -88,7 +88,7 @@ public class Authentication {
 	@Test(priority = 5)
 	void testAPIKeyAuthentication() {
 		given().pathParam("myPath", "geo/1.0/direct").queryParam("q", "London").queryParam("limit", 5)
-				.queryParam("appid", "e4b4e44f4a6311f21ab70176be529c0f").when()
+				.queryParam("appid", "watherDataApiKEY").when()
 				.get("http://api.openweathermap.org/{myPath}").then().statusCode(200).log().all();
 	}
 	/*
